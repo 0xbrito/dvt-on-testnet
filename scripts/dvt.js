@@ -15,7 +15,7 @@ const tokenAbi =
 
 const token = new ethers.Contract(DVT_ADDRESS, tokenAbi, provider);
 
-// Send 1 ether to an ens name.
+// Send 0.2 ether to attacker address.
 const tx = deployer.sendTransaction({
     to: attacker.address,
     value: ethers.utils.parseEther("0.2")
